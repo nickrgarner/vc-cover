@@ -3,15 +3,9 @@ import collections
 import networkx as nx
 
 
-"""
-This code is for the following tasks in 
-Part 2: Vertex Cover – Reduction and Verification:
+# This code is for the following tasks in 
+# Part 2: Vertex Cover – Reduction and Verification:
 
-Task I
-Task III.2
-
-
-"""
 
 def main():
     filename = sys.argv[1]
@@ -56,23 +50,6 @@ def main():
             break
     if not solve:
         print("no")
-
-    """
-    
-    This code should print  "yes"/"no" if there's a vertex cover of size k. 
-    (As long as there's a vertex cover of size k, print "yes"
-     Note that this code prints only one "yes" or "no")
-
-    Also, the code should write the complement graph of the input to a .txt file.
-    You can write the graph to .txt with this command: 
-    write_graph("complement.graph", YOUR_complement GRAPH)
-    
-
-    This code should use the "reduction from clique" idea to come up with 
-    the answer. 
-    
-    You can find cliques with this command:   nx.find_cliques(graph)
-    """
 
 def write_graph(filename, adj_list):
     with open(filename, "w") as fout:
