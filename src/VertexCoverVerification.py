@@ -2,15 +2,8 @@ import sys
 import copy
 import collections
 
-"""
-This code is for the following tasks in 
-Part 2: Vertex Cover – Reduction and Verification:
-
-Task II
-Task III.I
-
-
-"""
+# This code is for the following tasks in 
+# Part 2: Vertex Cover – Reduction and Verification:
 
 def main():
     gfilename = sys.argv[1]
@@ -20,11 +13,6 @@ def main():
     graph = load_graph(gfilename)
     candidates = load_candidates(cfilename)
 
-    """
-    Your code here. (You can add your own helper functions elsewhere)
-    This code should output "yes"/"no" for each candidate if it's a vertex cover of size k.
-    (i.e. If there are 5 candidate, print 5 "yes"/"no", seperated by new lines)
-    """
     for soln in candidates:
         graph = load_graph(gfilename)
         if len(soln) != k:
