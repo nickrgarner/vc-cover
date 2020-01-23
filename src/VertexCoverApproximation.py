@@ -2,9 +2,8 @@ import sys
 import random
 import collections
 
-"""
-This code is Part 1:Vertex Cover – Approximation
-"""
+# This code is Part 1:Vertex Cover – Approximation
+
 
 
 def main():
@@ -31,10 +30,10 @@ def output_cover(cover):
 
 
 def greedy_edge(adj_list):
-    """
-    Implement your code for greedy edge here.
-    It should return a list of vertices that covers every edge.
-    """
+    
+    # Implement your code for greedy edge here.
+    # It should return a list of vertices that covers every edge
+    
     output = []
     while len(adj_list.values()) > 0:
         # Grab first edge in dict
@@ -76,10 +75,10 @@ def greedy_edge(adj_list):
     return output
 
 def greedy_vertex(adj_list):
-    """
-    Implement your code for greedy vertex here.
-    It should return a list of vertices that covers every edge.
-    """
+    
+    # Implement your code for greedy vertex here.
+    # It should return a list of vertices that covers every edge.
+
     output = []
     while len(adj_list.values()) > 0:
         # Find highest order vertex, add to VC output
